@@ -1,0 +1,22 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/k1" android:duration="110" />
+    <item android:drawable="@drawable/k2" android:duration="110" />
+    <item android:drawable="@drawable/k3" android:duration="110" />
+    <item android:drawable="@drawable/k4" android:duration="110" />
+    <item android:drawable="@drawable/k5" android:duration="110" />
+    <item android:drawable="@drawable/k6" android:duration="110" />
+    <item android:drawable="@drawable/k7" android:duration="110" />
+    <item android:drawable="@drawable/k8" android:duration="110" />
+    <item android:drawable="@drawable/k9" android:duration="110" />
+    <item android:drawable="@drawable/k10" android:duration="110" />
+    <item android:drawable="@drawable/k11" android:duration="110" />
+    <item android:drawable="@drawable/k12" android:duration="110" />
+    <item android:drawable="@drawable/k13" android:duration="110" />
+    <item android:drawable="@drawable/k14" android:duration="110" />
+    <item android:drawable="@drawable/k15" android:duration="110" />
+    <item android:drawable="@drawable/k16" android:duration="110" />
+    <item android:drawable="@drawable/k17" android:duration="110" />
+    <item android:drawable="@drawable/k18" android:duration="110" />
+    <item android:drawable="@drawable/k19" android:duration="110" />
+</animation-list>

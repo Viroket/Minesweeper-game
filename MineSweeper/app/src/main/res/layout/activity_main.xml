@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:background="@drawable/background"
+    tools:context="com.example.tal.minesweeper.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/fragment_container"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+        <ImageButton
+            android:text="Map"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/mapButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="108dp"
+            android:background="@null"
+            app:srcCompat="@drawable/mapb"
+            android:src="@drawable/mapb"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="108dp"
+            android:text="Win Table"
+            android:id="@+id/tableButton"
+            android:layout_alignBottom="@+id/mapButton"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/tableb"
+            android:background="@null"
+            android:src="@drawable/tableb"/>
+
+        <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_level"
+        android:orientation="horizontal"
+        android:layout_marginBottom="41dp"
+        android:layout_above="@+id/imageButton_Start"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:text="@string/easy"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="54dp"
+            android:layout_weight="1"
+            android:layout_alignBottom="@+id/imageButton_Start"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/radioButton"
+            android:buttonTint="@android:color/holo_green_light"/>
+
+        <RadioButton
+            android:text="@string/medium"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_above="@+id/radioButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/radioButton2"
+            android:buttonTint="@android:color/holo_orange_dark" />
+
+        <RadioButton
+            android:text="@string/hard"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radioButton2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:id="@+id/radioButton3"
+            android:buttonTint="@android:color/holo_red_dark"/>
+
+    </RadioGroup>
+
+    <ImageButton
+        android:layout_height="45dp"
+        android:layout_width="130dp"
+        android:id="@+id/imageButton_Start"
+        app:srcCompat="@drawable/startbutton"
+        android:src="@drawable/startbutton"
+        android:background="@null"
+        android:scrollbarSize="6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    </RelativeLayout>

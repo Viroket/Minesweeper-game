@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    tools:context="com.example.tal.minesweeper.FragmentTable"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/Fragment_Table"
+    android:background="@drawable/border"
+    android:padding="2dp"
+    android:clickable="true"
+    >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_level_Table"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:text="@string/easy"
+            android:textSize="15dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tableRadioButton1"
+            android:buttonTint="@android:color/holo_green_light"/>
+
+        <RadioButton
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:text="@string/medium"
+            android:textSize="15dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_weight="0.25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tableRadioButton2"
+            android:buttonTint="@android:color/holo_orange_dark" />
+
+        <RadioButton
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:text="@string/hard"
+            android:textSize="15dp"
+            android:layout_weight="0.25"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tableRadioButton3"
+            android:buttonTint="@android:color/holo_red_dark"/>
+
+        <Button
+            android:layout_weight="0.25"
+            android:layout_width="41dp"
+            android:layout_height="38dp"
+            android:text="X"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:id="@+id/exitButton" />
+
+    </RadioGroup>
+    <TableLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:id = "@+id/scoreTableHeaders">
+        <TableRow
+            android:layout_gravity="top"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@android:color/holo_orange_light"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:text="@string/place_header"
+                android:gravity="center|left"
+                android:paddingRight="25dip" />
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@android:color/holo_orange_light"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:text="@string/name_header"
+                android:gravity="center|left"
+                android:paddingLeft="12.5dip"
+                android:paddingRight="12.5dp"/>
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@android:color/holo_orange_light"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:gravity="center"
+                android:text="@string/location_header"
+                android:paddingLeft="12.5dip"
+                android:paddingRight="12.5dp" />
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@android:color/holo_orange_light"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:gravity="right"
+                android:text="@string/time_header"
+                android:paddingLeft="20dip" />
+        </TableRow>
+
+    </TableLayout>
+    <TableLayout
+        android:layout_marginTop="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:id = "@+id/scoreTable"
+        android:visibility="gone">
+    </TableLayout>
+    <ProgressBar
+        android:id="@+id/progressBarTable"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true" />
+</FrameLayout>

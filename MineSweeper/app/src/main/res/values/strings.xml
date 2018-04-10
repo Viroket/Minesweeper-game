@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MineSweeper</string>
+    <string name="table_fragment_difficulty">difficulty</string>
+    <string name="bundle_key">bundleKey</string>
+    <string name="game_level_key">gameKey</string>
+    <string name="button_pressed">pressedButton</string>
+    <string name="game_end_key">gameEndKey</string>
+    <string name="game_time_key">gameTimeKey</string>
+    <string name="invalid_name_message">Invalid name(1-8 characters)</string>
+    <string name="data_inserted">data inserted</string>
+    <string name="data_not_inserted">data not inserted</string>
+
+    <string name="location_request">If you dont allow access to your location your records cannot be saved</string>
+    <string name="internet_request">If you dont allow access to your internet your records cannot be saved</string>
+    <string name="request_header">Records Error</string>
+
+    <string name="game_warning_message">"WARNING!\n Return the phone to starting position, Bombs being added!"</string>
+
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+
+    <string name="place_header">Place</string>
+    <string name="name_header">Name</string>
+    <string name="location_header">Location</string>
+    <string name="time_header">Time</string>
+
+    <string name="submit_button">Submit</string>
+    <string name="player_default">Player</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
